@@ -40,3 +40,8 @@ el hermoso mundo del tallado......'''))
     el hermoso mundo del tallado......'''))
     #cargar mas de la foto de ellos y agregar el texto de figma
     return render_template('index.html',clases=lista_clases)
+
+@app.route("/info",methods=['GET'])
+def info():
+    
+    return render_template('info.html')
