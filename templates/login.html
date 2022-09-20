@@ -7,32 +7,21 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <title> Artesania ::Instituto Paraguayo de Artesania</title>
     </head>
-    <!-- Esto seria para modificar el color, solo colocas bg- y eliges dentro de la sugerencia -->
-<!-- Siempre que querramos ponerle un fondo es bg o background y con min-h (alto) o min-w(ancho) mejor que sea full-->
     <body class="bg-gray-50 grid grid-cols-2 min-h-screen min-w-full">
-    <!-- div serian las diviciones o secciones que tendremos, y con el class le decimos que estilo tendra  -->
-    <!-- con bg-[url('/aqui la ruta')] podemos meter una imagen que se esta en nuestra pc, con bg-no-repeat le decimos -->
-    <!-- que no se repita la imagen para completar el espacio y con bg-cover que la imagen cubra todo el espacio -->
         <div>
             <img src="/static/arte_madera.jpg" class="min-h-full min-w-full">
         </div> 
-    <!-- Este grid es otra grilla con 6 filas, para poder ubicar las imagenes -->
         <div class="grid grid-rows-6 max-h-screen">
-    <!-- Aqui le indicamos con row-star-1 desde donde comienza la fila -->
             <div class="row-start-1 grid grid-cols-2">
                 <img src="/static/logo_ipa.png" width="186px" height="141px"/>
-    <!-- ajustamos los tamaños con h y w. Recuerda que podemos ponerle una clase a la imagen para indicarle
-    donde termina o si tiene un margen y justify es horizontal -->
                 <img src="/static/paraguay_gente.png" width="300px" height="180px" class=" justify-self-end mt-10" >
             </div>
-    <!-- Aqui le decimos que empienza otra fila en la 2 y que la anterior termina -->
             <div class="row-start-2 grid grid-cols-1">
-        <!-- Para que se alinee horizontalmente hay que ponerle columnas. -->
+        
                 <img src="/static/gobierno_logo.png" width="400px" height="98px" class="justify-self-center">
             </div>
-            <!-- Y aqui que en la fila 3 empienza otra y con row-span le decimos que se expande 4 filas -->
             <div class="row-start-3 row-span-4 grid grid-cols-1"> 
-                <form class=" w-[794px] h-[467px] justify-self-center mt-16 grid grid-rows-6 border-4 border-red-500 rounded" method="post">
+                <form class=" w-200 h-90 justify-self-center mt-16 grid grid-rows-6 border-4 border-red-500 rounded" method="post">
                     <div class="row-start-1 bg-red-500"></div>
                     <div class="row-start-2 grid grid-cols-4 items-center justify-items-start ">
                         <p class="justify-self-end mr-3 font-bold">Nombre de usuario:</p>
